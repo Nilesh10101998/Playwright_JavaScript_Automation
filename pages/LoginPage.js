@@ -1,5 +1,5 @@
 
-class LoginPage {
+export default class LoginPage {
 
     constructor(page) {
         this.page = page;
@@ -22,4 +22,3 @@ class LoginPage {
     }
 
 }
-export default LoginPage;

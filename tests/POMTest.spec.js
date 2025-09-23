@@ -10,11 +10,11 @@ test("POM Test", async ({ page }) => {
 
     await loginPage.gotoLoginPage();
     await loginPage.login("Nilesh Kasane", "Practice@123");
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(5_000);
+
 
     //HomePage 
     const homePage = new HomePage(page);
-
     await homePage.addProductToCart("Nexus 6");
     await page.waitForTimeout(3000);
     await homePage.goToCart();
