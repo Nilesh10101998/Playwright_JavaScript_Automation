@@ -16,5 +16,5 @@ test("Test2", async ({ page }) => {
 test("Test3", async ({ page }) => {
 
     await page.goto("https://demo.nopcommerce.com/");
-    await expect(page).toHaveTitle("nopCommerce demo store. Home page title");
+    await expect(page).toHaveTitle("nopCommerce demo store. Home page titl");
 })
