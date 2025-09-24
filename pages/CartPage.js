@@ -1,5 +1,5 @@
 
-export default class CartPage {
+class CartPage {
 
     constructor(page) {
         this.page = page;
@@ -20,3 +20,4 @@ export default class CartPage {
         }
     }
 }
+export default CartPage;

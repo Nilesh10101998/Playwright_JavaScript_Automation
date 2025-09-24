@@ -1,5 +1,5 @@
 
-export default class HomePage {
+class HomePage {
 
     constructor(page) {
         this.page = page;
@@ -33,3 +33,4 @@ export default class HomePage {
     }
 
 }
+export default HomePage;
