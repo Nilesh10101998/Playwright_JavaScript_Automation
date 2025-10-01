@@ -6,9 +6,9 @@ test("Handling Dropdowns", async ({ page }) => {
 
     //Multiple ways to select option from the dropdown
     // await page.locator("#country").selectOption({label: "India"});  //select by using label => we use to select option with visible text
-    // await page.locator("#country").selectOption("India"); //select by using the visible text
-    // await page.locator("#country").selectOption({ value: "uk" });  //select by using the value attribute
-    // await page.locator("#country").selectOption({index: 1}); //select by using the index
+    await page.locator("#country").selectOption("India"); //select by using the visible text
+    await page.locator("#country").selectOption({ value: "uk" });  //select by using the value attribute
+    await page.locator("#country").selectOption({index: 1}); //select by using the index
     // await page.selectOption("#country", "India"); //Directly select the option by passing two parameters (selecting using the text)
 
     //Assertions

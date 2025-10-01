@@ -9,7 +9,6 @@ test("Upload Single File", async ({ page }) => {
 
     await page.locator("#singleFileInput").setInputFiles("tests/UploadFiles/API Testing Notes.pdf");  //upload the single file
 
-
     await page.waitForTimeout(5000);
 })
 

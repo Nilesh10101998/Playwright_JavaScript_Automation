@@ -27,7 +27,6 @@ test("Bootstrap Dropdown", async ({ page }) => {
 
     }
 
-
     await page.waitForTimeout(5_000);
 
 })

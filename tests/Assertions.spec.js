@@ -21,8 +21,8 @@ test('Assertions Test', async ({ page }) => {
     await expect(searchbox).toBeEnabled();
 
     //Check the element is disable or not
-    // const searchbox2 = await page.locator("input[placeholder='Search store']");
-    // await expect(searchbox2).toBeDisabled();
+    const searchbox2 = await page.locator("input[placeholder='Search store']");
+    await expect(searchbox2).toBeDisabled();
 
     //to verify radiobutton is checked or not
     const maleRadioButton = await page.locator("#gender-male");
