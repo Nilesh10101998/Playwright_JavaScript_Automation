@@ -44,7 +44,7 @@ test('Assertions Test', async ({ page }) => {
 
     //To verify that element is contains that text or not
     const registerText2 = await page.locator('.page-title');
-    await expect(registerText2).toContainText("Reg");   //this will check the all text
+    await expect(registerText2).toContainText("Reg");   //this will check part of the text
 
     //To verify that element is having a value or not
     const emailInput = await page.locator("#Email");
