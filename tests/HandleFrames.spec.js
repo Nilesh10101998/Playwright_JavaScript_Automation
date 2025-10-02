@@ -9,7 +9,7 @@ test("Frames", async ({ page }) => {
     console.log("Number of frames:" + allFrames.length);
 
     //1]approach 1: by using name or url
-    const frameName1 = await page.frame("Frame Test Page");  //If name is present of the iframe
+    // const frameName1 = await page.frame("Frame Test Page");  //If name is present of the iframe
 
     const frame1 = await page.frame({ url: 'https://ui.vision/demo/webtest/frames/frame_1.html' });  //by using the frame url
 
