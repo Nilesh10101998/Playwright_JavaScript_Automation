@@ -15,7 +15,7 @@ test("Handling Page/Windows", async () => {
     await expect(page1).toHaveTitle("OrangeHRM");
 
     await page2.goto("https://www.orangehrm.com/");  //this is also separate page
-    await expect(page1).toHaveTitle("OrangeHRM");
+    await expect(page2).toHaveTitle("OrangeHRM");
 
 })
 
