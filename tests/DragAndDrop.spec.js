@@ -20,7 +20,6 @@ test("Drag and Drop Action", async ({ page }) => {
     await dragElement.dragTo(dropElement);  //simple apprach to do this 
 
 
-    await page.waitForTimeout(5_000);
-
+    await page.waitForTimeout(4000);
 
 })
