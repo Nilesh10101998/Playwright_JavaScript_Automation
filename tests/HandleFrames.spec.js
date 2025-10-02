@@ -9,13 +9,13 @@ test("Frames", async ({ page }) => {
     console.log("Number of frames:" + allFrames.length);
 
     //1]approach 1: by using name or url
-    // const frameName1 = await page.frame("Frame Test Page");  //If name is present of the iframe
+    const frameName1 = await page.frame("Frame Test Page");  //If name is present of the iframe
 
-    // const frame1 = await page.frame({ url: 'https://ui.vision/demo/webtest/frames/frame_1.html' });  //by using the frame url
+    const frame1 = await page.frame({ url: 'https://ui.vision/demo/webtest/frames/frame_1.html' });  //by using the frame url
 
-    // await frame1.locator("input[name='mytext1']").fill("Hello QA World"); //passing the value in the frame element
+    await frame1.locator("input[name='mytext1']").fill("Hello QA World"); //passing the value in the frame element
 
-    // await page.waitForTimeout(5_000);
+    await page.waitForTimeout(5_000);
 
 
     //2]approach 2: by using frame locator
