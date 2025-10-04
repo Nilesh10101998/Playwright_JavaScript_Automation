@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import CartPage from "../pages/CartPage";
+import { credentials } from "../TestData/userdata";
 
 test("POM Test", async ({ page }) => {
 
@@ -9,7 +10,7 @@ test("POM Test", async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     await loginPage.gotoLoginPage();
-    await loginPage.login("Nilesh Kasane", "Practice@123");
+    await loginPage.login(credentials.qaUser.username, credentials.qaUser.password);
     await page.waitForTimeout(5_000);
 
 

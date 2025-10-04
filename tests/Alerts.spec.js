@@ -5,7 +5,7 @@ test.skip("Alert with OK", async ({ page }) => {
     await page.goto("https://testautomationpractice.blogspot.com/");
 
     //Enabling alert handling => Dialog window handler
-    page.on('dialog', async dialog => {
+    page.on('dialog', async (dialog) => {
 
         expect(dialog.type()).toContain('alert');   //to check the type of the alert
         expect(dialog.message()).toContain('I am an alert box!'); //to verify the alert text
@@ -55,7 +55,7 @@ test("Prompt dialog", async ({ page }) => {
         await dialog.accept('Nilesh');  //Passing value to the prompt alert input box
         // await dialog.dismiss();  
 
-    })
+    });
 
     await page.locator("button[onclick='myFunctionPrompt()']").click();
     const confirmText = page.locator("p[id='demo']");
