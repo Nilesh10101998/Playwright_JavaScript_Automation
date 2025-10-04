@@ -1,3 +1,4 @@
+import { env_urls } from "../playwright.config";
 
 class LoginPage {
 
@@ -10,7 +11,7 @@ class LoginPage {
     }
 
     async gotoLoginPage() {
-        await this.page.goto("https://demoblaze.com/index.html");
+        await this.page.goto(env_urls.qaUrl);
     }
 
     async login(username, password) {

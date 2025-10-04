@@ -3,6 +3,7 @@ import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import CartPage from "../pages/CartPage";
 import { credentials } from "../TestData/userdata";
+import { generateRandomName } from "../utils/dataGeneratot";
 
 test("POM Test", async ({ page }) => {
 
