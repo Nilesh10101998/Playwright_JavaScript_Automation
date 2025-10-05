@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+test.describe.configure({retries: 2});
+
 test('Homepage test', async ({ page }) => {
 
     await page.goto("https://demoblaze.com/index.html");   //to lauch the url
@@ -16,4 +18,4 @@ test('Homepage test', async ({ page }) => {
 
     await page.close();
 
-})
+}) 

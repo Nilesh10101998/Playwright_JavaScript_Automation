@@ -20,12 +20,12 @@ test.only("Upload Multiple Files", async ({ page }) => {
     // await page.waitForSelector("#filesToUpload"); //wait for the selector
 
     await page.locator("#filesToUpload")
-        .setInputFiles(["tests/UploadFiles/API Testing Notes.pdf",
-                          "tests/UploadFiles/Nilesh_Kasane_Info.pdf"]);  //upload multiple files
+        .setInputFiles(["UploadFiles/API Testing Notes.pdf",
+            "UploadFiles/Nilesh_Kasane_Info.pdf"]);  //upload multiple files
 
 
     //verify the uploaded file texts
-    await expect(page.locator("#fileList > li:nth-child(1)")).toHaveText("API Testing Notes.pdf"); 
+    await expect(page.locator("#fileList > li:nth-child(1)")).toHaveText("API Testing Notes.pdf");
     await expect(page.locator("#fileList > li:nth-child(2)")).toHaveText("Nilesh_Kasane_Info.pdf");
 
 
