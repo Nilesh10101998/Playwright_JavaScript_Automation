@@ -2,8 +2,7 @@ import { test, expect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import CartPage from "../pages/CartPage";
-import { credentials } from "../TestData/userdata";
-import { generateRandomName } from "../utils/dataGeneratot";
+import { credentials } from "../Fixtures/userdata";
 
 test("POM Test", async ({ page }) => {
 
