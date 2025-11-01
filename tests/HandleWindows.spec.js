@@ -26,7 +26,7 @@ test.only("Handling Multiple Page/Windows", async () => {
     const context = await browser.newContext();
 
     const page1 = await context.newPage();
-    await page1.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");   //this is separate page
+    await page1.goto("https://opensource-demo.orangehrmli ve.com/web/index.php/auth/login");   //this is separate page
     await expect(page1).toHaveTitle("OrangeHRM");
 
     const pagePromise = context.waitForEvent('page');
